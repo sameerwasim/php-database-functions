@@ -1,6 +1,9 @@
 # PHP DATABASE FUNCTIONS
  
-<h3>How to use?</h3>
+ <h4>Brief Detail</h4>
+ <p>PHP PDO CRUD Functions to assist in the development of projects. It use PDO and uses escape to prevent SQL Injections.</p>
+ 
+<h4>How to use?</h4>
 
 <ol>
  <li>Start by defining the constants used by the class contructors to create the connection.</li>
