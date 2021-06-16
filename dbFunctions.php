@@ -1,3 +1,7 @@
+<!-- Developed by: Sameer Waseem -->
+<!-- Email: sameerwaseem17@gmail.com -->
+<!-- Website: http://sameerwasim.github.io/ -->
+
 <?php
 
 /**
