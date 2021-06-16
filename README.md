@@ -1,4 +1,6 @@
 # PHP DATABASE FUNCTIONS
  
-<h4>How to use?</h4>
+<h3>How to use?</h3>
+
+- Start by defining the constants in line 295
 
