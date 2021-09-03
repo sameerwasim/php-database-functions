@@ -1,6 +1,6 @@
 <!-- Developed by: Sameer Waseem -->
-<!-- Email: sameerwaseem17@gmail.com -->
-<!-- Website: http://sameerwasim.github.io/ -->
+<!-- Email: sameerwaseem01@gmail.com -->
+<!-- Website: https://sameerwasim.github.io/ -->
 
 <?php
 
