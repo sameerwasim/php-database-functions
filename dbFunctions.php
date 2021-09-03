@@ -259,6 +259,15 @@ class Database
     return $value[$column];
   }
 
+  /* Custom Query -
+    This is used to run user custom queries.
+  */
+  public function customQuery($query) {
+    $sql = $query;
+    $sql = $this->conn->prepare($sql);
+    if ($sql->execute())
+      return $sql->fetchAll(PDO::FETCH_ASSOC);
+  }
 
 }
 
