@@ -244,7 +244,29 @@ class Database
     $sql = $this->conn->prepare($sql);
     $sql->execute();
     $result = $sql->fetchAll(PDO::FETCH_ASSOC);
-    return $result[0]['total'];
+    if (!empty($result[0]['total'])) {
+      return $result[0]['total'];
+    } else {
+      return 0;
+    }
+  }
+  
+  /* Sum with condition -
+    selects all values from the
+    specified column from the specified
+    table where your conditions satisfies
+    and return the sum of that column.
+  */
+  public function selectSumWhere($table, $column, $where) {
+    $sql = "SELECT sum($column) as `total` FROM `$table` WHERE $where";
+    $sql = $this->conn->prepare($sql);
+    $sql->execute();
+    $result = $sql->fetchAll(PDO::FETCH_ASSOC);
+    if (!empty($result[0]['total'])) {
+      return $result[0]['total'];
+    } else {
+      return 0;
+    }
   }
 
   /* ID Value -
