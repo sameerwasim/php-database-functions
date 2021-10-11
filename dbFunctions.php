@@ -268,6 +268,19 @@ class Database
       return 0;
     }
   }
+  
+  /* Select with condition -
+    selects all values from
+    all these columns from the specified
+    table where your conditions satisfies
+    and also join with the specified table.
+  */
+  public function selectJoinWhere($table, $joinTable, $joinCondition, $where) {
+    $sql = "SELECT * FROM `$table` JOIN $joinTable ON $joinCondition WHERE $where";
+    $sql = $this->conn->prepare($sql);
+    $sql->execute();
+    return $sql->fetchAll(PDO::FETCH_ASSOC);
+  }
 
   /* ID Value -
     selects id value from
